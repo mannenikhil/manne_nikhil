@@ -1,0 +1,199 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #212529;
+    --secondary-color: #f21e4e;
+}
+
+body {
+    margin: 0px;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin-top: 3rem;
+}
+
+.port-sidebar-container {
+    width: 100px;
+    border-right: 1px solid #efefef;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+}
+
+.port-sidebar {
+    align-items: center;
+    height: 100vh;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.port-logo {
+    max-width: 50px;
+}
+
+.port-main-content-container {
+    margin-left: 100px;
+}
+
+.port-my-profile-content {
+    min-height: 700px;
+    background-color: #F6F7F8;
+}
+
+.port-container {
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 0px;
+}
+
+.port-social-container {
+    display: flex;
+    align-items: center;
+    color: var(--primary-color);
+    padding-top: 2rem;
+}
+
+.port-social-icon {
+    margin-right: 1rem;
+}
+
+.port-social-icon:hover {
+    color: var(--secondary-color)!important;
+}
+
+.port-image-container {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.port-my-role, .port-words-wrapper {
+    font-weight: 800;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.port-my-data-section {
+    width: 50%;
+}
+
+.port-secondary-header {
+    color: #343a40;
+}
+
+.port-visible {
+    display: block;
+}
+
+.port-hidden {
+    display: none;
+}
+
+.port-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-width: 0px;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 16px;
+}
+
+.port-data {
+    margin-right: 3rem;
+}
+
+.port-small-header {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.port-small-header-value {
+    margin-top: 0px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.port-section {
+    margin-top: 2rem;
+}
+
+.port-header-container {
+    position: relative;
+}
+
+.port-heading {
+    margin-bottom: 0px;
+    color: #343a40;
+}
+
+.port-heading::before {
+    position: absolute;
+    content: '';
+    left: -15px;
+    top: 0px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(242, 30, 78, 0.1);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.port-tagline {
+    margin-top: 0px;
+    color: #6c757d;
+}
+
+.port-about-me-profile-container {
+    width: 40%;
+    padding: 10px;
+    border-radius: 1px solid #f8f9fa;
+}
+
+.port-about-me-profile-pic {
+    width: 100%;
+    height: auto;
+}
+
+.project-card {
+    background-color: #f8f9fa;
+}
+
+.stepper-point {
+}
+
+.stepper-point::after {
+    width: 12px;
+    height: 12px;
+    content: '';
+    display: inline-block;
+    border-radius: 10px;
+    position: absolute;
+    top: 2rem;
+    left: -6px;
+    background-color: rgba(239, 68, 68, 1);
+}
+
+@media only screen and (max-width: 1024px) {
+    .port-main-content-container {
+        margin-left: 0px!important;
+    }   
+
+    .port-my-profile-content {
+        min-height: 650px;
+    }
+}
