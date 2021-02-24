@@ -6,15 +6,16 @@ import  { IoGlobeOutline } from 'react-icons/io5';
 
 export default class Aboutme extends React.Component {
     render() {
+        const { aboutmeRef} = this.props;
         return(
-            <div>
+            <div ref={aboutmeRef}>
                 <Header heading="About Me" tagline="Main information about me and what i do" />
                 <div className="grid grid-cols-1 lg:grid-cols-10 xl:grid-cols-10 2xl:grid-cols-10 gap-10 max-w-screen-xl">
                     <div className="col-span-6 lg:col-span-4 xl:col-span-4 2xl:col-span-4 shadow-sm rounded-sm border border-gray-50 p-2">
                         <img src="/avatar.jpeg" className="port-about-me-profile-pic" />
                     </div>
                     <div className="col-span-6">
-                        <p className="font-semibold	text-xl capitalize text-gray-900 mb-4">Hello, I'm {userData.name}</p>
+                        <p className="font-semibold	text-xl capitalize text-gray-900 mb-4">Hello, I'm <span className="primary-icons">{userData.name}</span></p>
                         <p className="leading-7 font-thin" style={{ color: '#343a40' }}>I am a Website & Mobile App Developer with 2+ years of experience.Expertised in creating Ecommerce Web & Mobile Application with Reach UI designs.I always try's to explore new things and to face challengings situations in that process.
                             I believe in punctuality, honesty & quality of my work provided. Having an experience of creating more than 25 Ecommerce websites and 5 mobile applications which can stackable to N number of stores.
                         </p>
@@ -33,10 +34,12 @@ export default class Aboutme extends React.Component {
                             </div>
                         </div>
                         <div className="mt-4">
-                            <button className="rounded inline-flex items-center capitalize text-white bg-red-500 p-2 pl-4 text-sm pr-4">
+                            <a href="/manne_nikhil.docx" download>
+                            <button className="rounded inline-flex items-center capitalize text-white p-2 pl-4 text-sm pr-4 primary-color hover:bg-blue-900">
                                 <FaCloudDownloadAlt size={16} />
                                 &nbsp;&nbsp;Download my cv
                             </button>
+                            </a>
                         </div>
                     </div>
                 </div>

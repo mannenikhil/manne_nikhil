@@ -5,7 +5,7 @@
 
 :root {
     --primary-color: #212529;
-    --secondary-color: #f21e4e;
+    --secondary-color: #312EE6;
 }
 
 body {
@@ -43,10 +43,6 @@ body {
 
 .port-logo {
     max-width: 50px;
-}
-
-.port-main-content-container {
-    margin-left: 100px;
 }
 
 .port-my-profile-content {
@@ -113,6 +109,10 @@ body {
     font-size: 16px;
 }
 
+.port-primary-header {
+    color: var(--secondary-color);
+}
+
 .port-data {
     margin-right: 3rem;
 }
@@ -148,7 +148,8 @@ body {
     top: 0px;
     width: 50px;
     height: 50px;
-    background-color: rgba(242, 30, 78, 0.1);
+    /* background-color: rgba(242, 30, 78, 0.1); */
+    background-color:  #d2d1fa;
     border-radius: 50%;
     z-index: -1;
 }
@@ -173,6 +174,18 @@ body {
     background-color: #f8f9fa;
 }
 
+.experience-border {
+    border-left: 1px solid var(--secondary-color);
+}
+
+.primary-icons {
+    color: var(--secondary-color);
+}
+
+.primary-color {
+    background-color: var(--secondary-color);
+}
+
 .stepper-point {
 }
 
@@ -185,7 +198,16 @@ body {
     position: absolute;
     top: 2rem;
     left: -6px;
-    background-color: rgba(239, 68, 68, 1);
+    background-color:  var(--secondary-color);
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 @media only screen and (max-width: 1024px) {

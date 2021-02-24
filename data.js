@@ -13,7 +13,7 @@ const userData = {
     dob: '19-07-1996',
     work_status: 'Mobile & Web App Developer',
     nationality: 'Indian',
-    work_experience: '2 years',
+    work_experience: '2+ years',
     education: [
         { name: 'bachelors of Technology', year_of_passing: '2018', start_of_educatioin: '2014', institution_name: 'JNTUH', education_type: 'degree' },
         { name: 'Board of intermediate', year_of_passing: '2014', start_of_educatioin: '2012', institution_name: 'Narayana jr college', education_type: 'inter' },

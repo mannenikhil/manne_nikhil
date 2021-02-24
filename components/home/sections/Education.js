@@ -4,9 +4,9 @@ export default class Education extends React.Component {
     render() {
         return(
             <div>
-                <h1 className="font-semibold text-xl">My Education</h1>
+                <h1 className="font-semibold text-xl">My <span className="primary-icons">Education</span></h1>
                 <div className="shadow p-4 mt-4 rounded shadow-lg">
-                    <div className="border-l relative border-red-500">
+                    <div className="border-l relative experience-border">
                         <div className="stepper-point p-7">
                             <h1 className="text-gray-800 font-medium leading-7">Bachelor's Of Technology - JNTUH</h1>
                             <p className="text-gray-400 mt-1 mb-4 text-sm">2014 - 2018</p>
